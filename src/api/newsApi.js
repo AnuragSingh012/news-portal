@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const API_KEY = 'dfce8b4be3a24404879df6c359c77366';
-const BASE_URL = 'https://newsapi.org/v2';
+const API_KEY = import.meta.env.VITE_API_KEY;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export const fetchArticles = async (category, page) => {
   try {
